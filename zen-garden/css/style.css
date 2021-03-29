@@ -1,3 +1,15 @@
+.hero {
+    height: 100vh;
+    background-color: #333;
+    margin: 0;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
 /* navigation style */
 .navbar {
 	position: fixed !important;
@@ -49,7 +61,7 @@
 
 /* background navigation shift */
 .background-trans {
-  background-color: #111;
+  background-color: #333;
 }
 
 .background-trans .link {
@@ -147,7 +159,7 @@
     }
 
     .background-trans .nav-wrapper {
-        background-color: #111;
+        background-color: #333;
     }
 
     .background-trans .nav-wrapper ul li .link {

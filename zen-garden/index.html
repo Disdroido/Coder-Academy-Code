@@ -7,6 +7,7 @@
     <title>Zen Garden</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
 
@@ -33,7 +34,156 @@
         </nav>
     </div>
       
+    <div class="hero">
+        <div class="container my-auto" style="padding-top: 24vh;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row text-center">
+                        <div class="col-md-4 d-flex justify-content-evenly">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Mid Century Modern">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Mid Century Moder By Andrew Lohman</h5>
+                                    <p class="card-text">Mid Century Modern designed by <a href="http://andrewlohman.com/">Andrew Lohman</a></p>
+                                    <a href="221" class="btn btn-primary mt-auto">Mid Century Modern</a>
+                                </div>
+                            </div>
+                        </div>
     
+                        <div class="col-md-4 d-flex justify-content-evenly">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="https://resources.matcha-jp.com/original/2020/05/08-102660.jpeg" class="card-img-top" alt="Japanese Garments">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Garments By Dan Mall</h5>
+                                    <p class="card-text">Garments designed by <a href="http://danielmall.com/">Dan Mall</a></p>
+                                    <a href="220" class="btn btn-primary mt-auto">Garments</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4 d-flex justify-content-evenly">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Katana_-_showing_alternating_layers.jpg/220px-Katana_-_showing_alternating_layers.jpg" class="card-img-top" alt="Japanese Steel">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Steel By </h5>
+                                    <p class="card-text">Steel designed by <a href="http://steffen-knoeller.de">Steffen Knoeller</a></p>
+                                    <a href="219" class="btn btn-primary mt-auto">Steel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row text-center">
+                        <div class="col-md-4 d-flex justify-content-evenly">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiV8K3a8o0-xC66YBdqZJCNRlVxChNx4JC8w&usqp=CAU" class="card-img-top" alt="Japanese Apothecary">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Apothecary By Trent Walton</h5>
+                                    <p class="card-text">Apothecary designed by <a href="http://trentwalton.com">Trent Walton</a></p>
+                                    <a href="218" class="btn btn-primary mt-auto">Apothecary</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4 d-flex justify-content-evenly">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="https://cdn.shopify.com/s/files/1/0256/9378/2094/products/kazari_JS77b-2WL_japanese_screen_imaokeinen_300x.jpg?v=1574191459" class="card-img-top" alt="Screen Filter">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Screen Filler By Elliot Jaystocks</h5>
+                                    <p class="card-text">Screen Filler designed by <a href="http://elliotjaystocks.com/">Elliot Jaystocks</a></p>
+                                    <a href="217" class="btn btn-primary mt-auto">Screen Filler</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4 d-flex justify-content-evenly">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/ArchibaldFountainHydePark.JPG" class="card-img-top" alt="Fountain Kisses">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Fountain Kiss By Jeremy Carlson</h5>
+                                    <p class="card-text">Fountain Kiss designed by <a href="http://jeremycarlson.com">Jeremy Carlson</a></p>
+                                    <a href="216" class="btn btn-primary mt-auto">Fountain Kiss</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item mx-auto">
+                    <div class="row text-center">
+                        <div class="col-md-4 d-flex justify-content-center w-50">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="https://media.wired.com/photos/599cbdf191885f7b084d37f7/4:3/w_1396,h_1047,c_limit/Robot-Video.jpg" class="card-img-top" alt="A Robot Named Jimmy">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">A Robot Named Jimmy By Meltmedia</h5>
+                                    <p class="card-text">A Robot Named Jimmy designed by <a href="http://meltmedia.com/">Meltmedia</a></p>
+                                    <a href="215" class="btn btn-primary mt-auto">A Robot Named Jimmy</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4 d-flex justify-content-center w-50">
+                            <div class="card h-100" style="width: 18rem;">
+                                <img src="https://i.pinimg.com/originals/99/ff/1e/99ff1e819df7de5cba758386ea01bbbb.jpg" class="card-img-top" alt="Verde Moderna">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Verde Moderna By Dave Shea</h5>
+                                    <p class="card-text">Verde Moderna designed by <a href="http://www.mezzoblue.com/">Dave Shea</a></p>
+                                    <a href="214" class="btn btn-primary mt-auto">Verde Moderna</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="fas fa-chevron-left me-auto fs-1" aria-hidden="true" style="color: #fff;"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="fas fa-chevron-right ms-auto fs-1" aria-hidden="true" style="color: #fff;"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>The Road to Enlightenment</h2>
+        <p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, broken CSS support, and abandoned browsers.</p> 
+        <p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WaSP, and the major browser creators.</p>
+        <p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.</p>
+
+        <h2 class="mt-5">So What is This About?</h2>
+        <p>There is a continuing need to show the power of CSS. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The HTML remains the same, the only thing that has changed is the external CSS file. Yes, really.</p> 
+        <p>CSS allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. Designers and coders alike have contributed to the beauty of the web; we can always push it further.</p>
+
+        <h3 class="mt-5">Participation</h3>
+		<p>Strong visual design has always been our focus. You are modifying this page, so strong <abbr title="Cascading Style Sheets">CSS</abbr> skills are necessary too, but the example files are commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them as starting points. Please see the <a href="http://www.mezzoblue.com/zengarden/resources/" title="A listing of CSS-related resources"><abbr title="Cascading Style Sheets">CSS</abbr> Resource Guide</a> for advanced tutorials and tips on working with <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+		<p>You may modify the style sheet in any way you wish, but not the <abbr title="HyperText Markup Language">HTML</abbr>. This may seem daunting at first if you&#8217;ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.</p>
+		<p>Download the sample <a href="/examples/index" title="This page's source HTML code, not to be modified.">HTML</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">CSS</a> to work on a copy locally. Once you have completed your masterpiece (and please, don&#8217;t submit half-finished work) upload your <abbr title="Cascading Style Sheets">CSS</abbr> file to a web server under your control. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Use the contact form to send us your CSS file">Send us a link</a> to an archive of that file and all associated assets, and if we choose to use it we will download it and place it on our server.</p>
+    
+        <h3>Benefits</h3>
+		<p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal parts inspiration for those working on the web today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.</p>
+
+        <h3>Requirements</h3>
+		<p>Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be provided. The CSS Zen Garden is about functional, practical <abbr title="Cascading Style Sheets">CSS</abbr> and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your <abbr title="Cascading Style Sheets">CSS</abbr> validates.</p>
+		<p>Luckily, designing this way shows how well various browsers have implemented <abbr title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days &#8212; especially when you factor in mobile &#8212; pixel-perfect layouts may not be possible across every platform. That&#8217;s okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).</p>
+		<p>We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum, and try to incorporate unique and interesting visual themes to your work. We&#8217;re well past the point of needing another garden-related design.</p>
+		<p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <a href="http://www.mezzoblue.com/zengarden/submit/guidelines/">submission guidelines</a>), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Zen Garden's license information.">one on this site</a> so that others may learn from your work.</p>
+		<p>By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</p>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <a href="http://validator.w3.org/check/referer">HTML</a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+            <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC</a>
+            <a href="http://mezzoblue.com/zengarden/faq/#aaa">A11y</a>
+            <a href="https://github.com/mezzoblue/csszengarden.com">GH</a>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
