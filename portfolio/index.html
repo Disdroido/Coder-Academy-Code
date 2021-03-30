@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Worth</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav class="background-trans">
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="logo">
+                    <a href="/"><img src="../../assets/img/logo.png" alt="Ethan Worth"></a>
+                </div>
+            
+                <div class="nav-wrapper">
+                    <ul>
+                    <li><a href="#home" class="lg-hidden brand"><img src="../../assets/img/logo_small.png" alt="Ethan Worth"></a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#hire">Hire Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    
+    <div class="hero">
+
+    </div>
+
+    <script type="text/javascript">
+        $(function() {
+          //caches a jQuery object containing the header element
+          var header = $("nav");
+          $(window).scroll(function() {
+              var scroll = $(window).scrollTop();
+      
+              if (scroll >= 70) {
+                  header.removeClass('background-trans').addClass("background-default");
+              } else {
+                  header.removeClass("background-default").addClass('background-trans');
+              }
+          });
+        });
+    </script>
+    
+</body>
+</html>
