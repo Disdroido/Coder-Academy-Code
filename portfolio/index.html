@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethan Worth</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.js"></script>
 </head>
 <body>
 
@@ -35,8 +36,16 @@
     </div>
     
     <div class="hero">
-
+        <div class="hero-content">
+            <p class="fs-1">ETHAN.md</p>
+            <p class="fs-1 fw-light">Full Stack Website Developer</p>
+            <p class="fs-2 fw-light ts-underline">More Coming Soon</p>
+        </div>
     </div>
+
+    <!-- <div class="content">
+
+    </div> -->
 
     <script type="text/javascript">
         $(function() {
@@ -45,7 +54,7 @@
           $(window).scroll(function() {
               var scroll = $(window).scrollTop();
       
-              if (scroll >= 70) {
+              if (scroll >= 700) {
                   header.removeClass('background-trans').addClass("background-default");
               } else {
                   header.removeClass("background-default").addClass('background-trans');
