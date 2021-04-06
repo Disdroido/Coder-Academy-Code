@@ -12,7 +12,7 @@
 
     <div class="wrapper">
         <header>
-            <nav class="background-trans">
+            <nav id="navbar">
                 <input type="checkbox" id="nav" class="hidden">
                 <label for="nav" class="nav-btn">
                     <i></i>
@@ -20,15 +20,15 @@
                     <i></i>
                 </label>
                 <div class="logo">
-                    <a href="/"><img src="../../assets/img/logo.png" alt="Ethan Worth"></a>
+                    <a href="/"><img src="assets/img/logo-dark.png" alt="Ethan Worth"></a>
                 </div>
             
                 <div class="nav-wrapper">
                     <ul>
-                    <li><a href="#home" class="lg-hidden brand"><img src="../../assets/img/logo_small.png" alt="Ethan Worth"></a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#hire">Hire Me</a></li>
+                        <li><a href="" class="lg-hidden brand"><img src="assets/img/logo-dark-small.png" alt="Ethan Worth"></a></li>
+                        <li><a class="btn link1" href="#about">about</a></li>
+                        <li><a class="btn link2" href="#blog">blog</a></li>
+                        <li><a class="btn link3" href="#contact">contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -43,25 +43,23 @@
         </div>
     </div>
 
-    <!-- <div class="content">
+    <div class="content">
 
-    </div> -->
+        <div id="about" class="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
+        </div>
 
-    <script type="text/javascript">
-        $(function() {
-          //caches a jQuery object containing the header element
-          var header = $("nav");
-          $(window).scroll(function() {
-              var scroll = $(window).scrollTop();
-      
-              if (scroll >= 700) {
-                  header.removeClass('background-trans').addClass("background-default");
-              } else {
-                  header.removeClass("background-default").addClass('background-trans');
-              }
-          });
-        });
-    </script>
+        <div id="portfolio">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
+        </div>
+
+        <div id="hire">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
+        </div>
+
+    </div>
+
+    <script src="assets/js/custom.js"></script>
     
 </body>
 </html>
