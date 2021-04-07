@@ -29,6 +29,7 @@
                         <li><a class="btn link1" href="#about">about</a></li>
                         <li><a class="btn link2" href="#blog">blog</a></li>
                         <li><a class="btn link3" href="#contact">contact</a></li>
+                        <li><a class="btn link3" href="#resume">resume</a></li>
                     </ul>
                 </div>
             </nav>
@@ -38,28 +39,86 @@
     <div class="hero">
         <div class="hero-content">
             <p class="fs-1">ETHAN.md</p>
-            <p class="fs-1 fw-light">Full Stack Website Developer</p>
-            <p class="fs-2 fw-light ts-underline">More Coming Soon</p>
+            <p class="text1 fs-2 fw-light"></p>
         </div>
     </div>
 
     <div class="content">
 
-        <div id="about" class="about">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
-        </div>
+        <section>
+            <div id="about" class="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
+            </div>
+        </section>
 
-        <div id="portfolio">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
-        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <b>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
 
-        <div id="hire">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
-        </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </b>
+
+        <section>
+            <div id="portfolio">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
+            </div>
+        </section>
+
+        <section>
+            <div id="hire">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
+            </div>
+        </section>
 
     </div>
 
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        var content1 = 'Full Stack Website Developer';
+        var content2 = "Still Learning";
+
+        var ele = '<span>' + content1.split('').join('</span><span>') + '</span><br><span class="ts-underline">' + content2.split('').join('</span><span class="ts-underline">') + '</span>';
+
+
+        $(ele).hide().appendTo('.text1').each(function (i) {
+            $(this).delay(100 * i).css({
+                display: 'inline',
+                opacity: 0
+            }).animate({
+                opacity: 1
+            }, 100);
+        });
+    </script>
     
 </body>
 </html>
