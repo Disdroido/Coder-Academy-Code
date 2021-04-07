@@ -4,85 +4,85 @@
 
 * {
 	font-family: 'Poppins', sans-serif;
-}
-
-body {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
-/* Start of tha navbar */
-nav {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	position: fixed;
-	width: 100%;
-	height: 70px;
-	background: #333;
+@media only screen and (min-width: 768px) {
+	/* Start of tha navbar */
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		position: fixed;
+		width: 100%;
+		height: 70px;
+		background: #333;
+	}
+
+	.logo {
+		margin-right: auto;
+		margin-top: 6px;
+	}
+
+	.logo img {
+		height: 50px;
+	}
+
+	nav div.nav-wrapper {
+		top: 0 !important;
+	}
+
+	nav ul {
+		padding: 0;
+	}
+
+	nav ul li {
+		display: inline-block;
+	}
+
+	nav ul li:not(:first-child) {
+		margin-left: 20px;
+	}
+
+	nav ul li:last-child {
+		margin-right: 20px;
+	}
+
+	nav ul li a {
+		outline: none;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 13px;
+		letter-spacing: 2px;
+		font-weight: 600;
+		padding: 5px 0;
+		opacity: 1;
+		transition: all .3s ease !important;
+		color: #fff;
+	}
+
+	nav ul li a:hover {
+		color: #00bf99;
+		text-decoration: none;
+	}
+
+	.active {
+		color: #720093 !important;
+	}
+
+	/* hidden on screen style */
+	.hidden {
+		display: none;
+	}
+
+	.lg-hidden {
+		display: none;
+	}
 }
 
-.logo {
-	margin-right: auto;
-	margin-top: 6px;
-}
-
-.logo img {
-	height: 50px;
-}
-
-nav div.nav-wrapper {
-	top: 0 !important;
-}
-
-nav ul {
-	padding: 0;
-}
-
-nav ul li {
-	display: inline-block;
-}
-
-nav ul li:not(:first-child) {
-	margin-left: 20px;
-}
-
-nav ul li:last-child {
-	margin-right: 20px;
-}
-
-nav ul li a {
-	outline: none;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 13px;
-	letter-spacing: 2px;
-	font-weight: 600;
-	padding: 5px 0;
-	opacity: 1;
-	transition: all .3s ease !important;
-	color: #fff;
-}
-
-nav ul li a:hover {
-	color: #00bf99;
-	text-decoration: none;
-}
-
-.active {
-	color: #720093 !important;
-}
-
-/* hidden on screen style */
-.hidden {
-	display: none;
-}
-
-.lg-hidden {
-	display: none;
-}
-
-@media screen and (max-width: 846px) {
+@media only screen and (max-width: 600px) {
 	/* logo and branding style */
 	.logo {
 		opacity: 1;
@@ -292,6 +292,10 @@ nav ul li a:hover {
 .content {
 	background-color: #333 !important;
 	height: auto;
+}
+
+.content section {
+	padding: 50px;
 }
 
 /* Font Sizing */
